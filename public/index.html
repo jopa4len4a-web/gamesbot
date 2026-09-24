@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Бункер</title>
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app">
+    <header>
+      <h1>🏚️ БУНКЕР</h1>
+      <div id="roundInfo">Раунд: —</div>
+    </header>
+
+    <div id="catastrophe" class="catastrophe">
+      <div class="label">КАТАСТРОФА</div>
+      <div id="catastropheText">Загрузка...</div>
+    </div>
+
+    <div id="playerCards" class="cards"></div>
+
+    <div id="playersList" class="players"></div>
+
+    <div id="voteSection" class="vote-section">
+      <h2>Голосование</h2>
+      <div id="voteButtons"></div>
+    </div>
+
+    <button id="mainButton" class="hidden">Отправить голос</button>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
