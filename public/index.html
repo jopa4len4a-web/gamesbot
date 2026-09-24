@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Бункер</title>
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app">
+    <header class="header">
+      <div class="logo">🏚️</div>
+      <h1>БУНКЕР</h1>
+      <div class="subtitle">игра на выживание</div>
+    </header>
+
+    <section class="catastrophe">
+      <div class="catastrophe-badge">КАТАСТРОФА</div>
+      <div id="catastropheText" class="catastrophe-text">Загрузка...</div>
+    </section>
+
+    <section class="round-bar">
+      <div class="round-label">РАУНД</div>
+      <div id="roundInfo" class="round-value">—</div>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">ТВОЙ ПЕРСОНАЖ</h2>
+      <div id="playerCards" class="cards"></div>
+      <p class="hint">Нажми на карту, чтобы раскрыть её</p>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">ВЫЖИВШИЕ</h2>
+      <div id="playersList" class="players"></div>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">ГОЛОСОВАНИЕ</h2>
+      <div id="voteButtons" class="vote-buttons"></div>
+    </section>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
